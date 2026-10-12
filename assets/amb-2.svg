@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#1c1c1c"/>
+  <path d="M120,220 Q200,100 280,220 Z" fill="#c84b31" opacity="0.6"/>
+  <circle cx="200" cy="180" r="40" fill="#ff5722" opacity="0.8"/>
+  <text x="200" y="250" font-family="Georgia" font-size="16" fill="#f5f5f5" text-anchor="middle">Forno a Lenha</text>
+</svg>

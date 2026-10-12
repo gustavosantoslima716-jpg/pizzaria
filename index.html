@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria 1910 | Tradição e Alta Gastronomia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">1910<span>.</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#story" class="nav-link">Nossa História</a></li>
+                    <li><a href="#menu" class="nav-link">Cardápio</a></li>
+                    <li><a href="#experience" class="nav-link">A Experiência</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#menu" class="btn btn-outline">Pedir Agora</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <span class="badge">Fundada em 1910 • Tradição Italiana</span>
+            <h1>A Arte da Pizza <br>Elevada ao <em>Extremo</em></h1>
+            <p>Ingredientes D.O.P. importados de Nápoles, fermentação natural de 48 horas e assadas a lenha a 500°C. Uma viagem sensorial única.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explorar Cardápio</a>
+                <a href="#story" class="btn btn-text">Conheça Nossa História &rarr;</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>48h</h3>
+                    <p>Fermentação Lenta</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Farinha Napolitana</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500°C</h3>
+                    <p>Forno a Lenha</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story section" id="story">
+        <div class="container">
+            <div class="grid story-grid">
+                <div class="story-image-wrapper">
+                    <div class="story-badge-floating">
+                        <span>Desde</span>
+                        <strong>1910</strong>
+                    </div>
+                    <div class="story-img-main">
+                        <img src="assets/pizza-craft.svg" alt="Massa artesanal sendo preparada">
+                    </div>
+                </div>
+                <div class="story-content">
+                    <span class="section-subtitle">Legado & Paixão</span>
+                    <h2>Mais de um século de devoção à verdadeira pizza</h2>
+                    <p>Tudo começou nas ruas históricas de Nápoles em 1910. Nossa receita foi passada através de gerações, mantendo rigorosamente os métodos artesanais que transformam simples ingredientes em uma obra-prima culinária.</p>
+                    <p>Acreditamos que a excelência reside na paciência: nossa massa descansa por pelo menos 48 horas, garantindo uma leveza incomparável e digestão perfeita.</p>
+                    <ul class="story-features">
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Tomates San Marzano colhidos no Vesúvio</span>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Mozzarella di Bufala Campana fresca</span>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Azeite Extra Virgem prensado a frio</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Alta Gastronomia</span>
+                <h2>Nosso Cardápio</h2>
+                <p>Seleção exclusiva de pizzas clássicas napolitanas e criações autorais da casa.</p>
+            </div>
+
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="tradicionais">Tradicionais</button>
+                <button class="filter-btn" data-filter="especiais">Especiais 1910</button>
+                <button class="filter-btn" data-filter="doces">Doces</button>
+            </div>
+
+            <div class="menu-grid" id="menuGrid">
+                <!-- Itens injetados via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Gallery Showcase -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Ambiente & Atmosfera</span>
+                <h2>A Experiência 1910</h2>
+                <p>Um espaço sofisticado projetado para despertar todos os seus sentidos.</p>
+            </div>
+            <div class="experience-grid">
+                <div class="exp-card">
+                    <div class="exp-img">
+                        <img src="assets/amb-1.svg" alt="Ambiente interno sofisticado">
+                    </div>
+                    <div class="exp-info">
+                        <h3>Salão Principal</h3>
+                        <p>Iluminação intimista e design rústico-contemporâneo.</p>
+                    </div>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-img">
+                        <img src="assets/amb-2.svg" alt="Forno a lenha artesanal">
+                    </div>
+                    <div class="exp-info">
+                        <h3>Forno a Lenha</h3>
+                        <p>O coração da pizzaria, operado por mestres pizzaiolos.</p>
+                    </div>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-img">
+                        <img src="assets/amb-3.svg" alt="Carta de vinhos selecionados">
+                    </div>
+                    <div class="exp-info">
+                        <h3>Adega Subterrânea</h3>
+                        <p>Rótulos premiados para harmonizações perfeitas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Reconhecimento</span>
+                <h2>O que dizem os críticos</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"A massa mais perfeita fora de Nápoles. A 1910 resgata a verdadeira essência da pizza com requinte impecável."</p>
+                    <strong>Guia Gastronômico Brasil</strong>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Uma experiência imersiva. Cada mordida na pizza Margherita D.O.P. é uma viagem direta à Itália."</p>
+                    <strong>Revista Paladar & Arte</strong>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Ambiente deslumbrante, atendimento irrepreensível e pizzas que são verdadeiras obras de arte."</p>
+                    <strong>Folha de S.Paulo</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Reservation -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-subtitle">Visite-nos</span>
+                    <h2>Faça sua Reserva ou Encomenda</h2>
+                    <p>Venha viver momentos inesquecíveis conosco ou peça com toda comodidade no conforto da sua casa.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <div>
+                                <strong>Endereço</strong>
+                                <p>Rua Augusta, 1910 - Jardins, São Paulo - SP</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <div>
+                                <strong>Telefone / WhatsApp</strong>
+                                <p>(11) 3191-1910</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <div>
+                                <strong>Horário de Funcionamento</strong>
+                                <p>Terça a Domingo: das 18h às 23h30</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="reservationForm" class="reservation-form">
+                        <h3>Reserve sua Mesa</h3>
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" required placeholder="Seu nome">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Data</label>
+                                <input type="date" id="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Horário</label>
+                                <select id="time" required>
+                                    <option value="">Selecione</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Número de Pessoas</label>
+                            <select id="guests" required>
+                                <option value="1">1 Pessoa</option>
+                                <option value="2" selected>2 Pessoas</option>
+                                <option value="3">3 Pessoas</option>
+                                <option value="4">4 Pessoas</option>
+                                <option value="5+">5+ Pessoas</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Confirmar Reserva</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">1910<span>.</span></a>
+                <p>Tradição, paixão e ingredientes autênticos em cada fatia.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#story">Nossa História</a></li>
+                    <li><a href="#menu">Cardápio</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="TripAdvisor">TripAdvisor</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 1910 Pizzaria. Todos os direitos reservados. Desenvolvido com excelência.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Pedido / Sucesso -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Conteúdo dinâmico -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
